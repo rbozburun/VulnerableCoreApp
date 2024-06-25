@@ -15,7 +15,8 @@ steps:
     targetType: 'inline'
     script: |
       Write-Host "Translating the project..."
-      sourceanalyzer -b CoreApp C:\VulnerableWebApps\VulnerableCoreApp-master\
+      $output = sourceanalyzer -b CoreApp C:\VulnerableWebApps\VulnerableCoreApp-master\
+      Write-Host "$output"
 
 - task: PowerShell@2
   inputs:

@@ -29,6 +29,6 @@ steps:
         if ($line -like "*token:*"){
           # Split the line at "token: " and get the right side
           $token = $line.Split(":")[1].Trim()
-          Write-Output "Captured token: $token"
+          Write-Host "Captured token: $token"
         } 
       }
